@@ -30,7 +30,7 @@ II. Commads run before:
 // 4. truffle migrate - For deploy 
 
 
-pragma solidity 0.6.0; //1. Enter solidity version here
+pragma solidity >=0.7.0 <0.9.0; //1. Enter solidity version here
 
 //2. Create contract here
 contract HelloWorld
