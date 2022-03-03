@@ -36,11 +36,24 @@ pragma solidity >=0.7.0 <0.9.0; //1. Enter solidity version here
 contract HelloWorld
 {
     string stringHelloWorld = "Hello World!"; // Visibility is set automatically to intern to null and value 0 is set for int
-    uint256 simpleInt;
+
+    //This is our number
+    uint256 favNumber;// default initialized with 0 
 
     // Just a simple function to return a string Hello
     function readHello() public view returns(string memory){
         return stringHelloWorld;
+    }
+
+    // A simple set method
+    function setFavNumber(uint256 input_num) public {
+        favNumber = input_num;
+    }
+
+ 
+    // A simple get method
+    function getFavNumber() public view returns (uint256){
+        return favNumber;
     }
 
 }
