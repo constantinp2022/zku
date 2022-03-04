@@ -46,6 +46,25 @@ contract Ballot {
         }
     }
 
+    //MODIFIED VERSION
+     
+    // function giveRightToVote(address[] memory input_voters) public {
+    //     require(
+    //         msg.sender == chairperson,
+    //         "Only chairperson can give right to vote."
+    //     );
+
+    //     for (uint i = 0; i < input_voters.length; i++) {
+    //         // 'Proposal({...})' creates a temporary
+    //         // Proposal object and 'proposals.push(...)'
+    //         // appends it to the end of 'proposals'.
+            
+    //         require(voters[input_voters[i]].weight == 0);
+    //         voters[input_voters[i]].weight = 1;
+    //     }
+    // }
+
+
     // Give `voter` the right to vote on this ballot.
     // May only be called by `chairperson`.
     function giveRightToVote(address voter) external {
